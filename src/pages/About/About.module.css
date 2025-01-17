@@ -1,0 +1,32 @@
+
+
+
+
+.aboute_container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    color: white;
+    margin: 10px 20px;
+    padding: 10px 20px;
+
+
+    
+  
+}
+
+.gallery
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: start;
+justify-content: center;
+/* background-color: aqua; */
+
+}

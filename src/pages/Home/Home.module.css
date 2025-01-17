@@ -1,0 +1,124 @@
+
+
+.home_container{
+  max-width: 100%;
+    width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  
+   
+    
+}
+
+
+.Sizes
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+ 
+
+ 
+
+}
+
+
+
+
+  .image_container {
+    margin-top: 10px; 
+    width: 1200px; 
+    display:flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+
+
+  .image_container img
+  {
+/* object-fit: cover; */
+width: 650px;
+height:650px;
+object-fit: cover;
+margin-top: 20px;
+margin-bottom: 20px; 
+
+  }
+
+
+.video_container {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+
+    width: 100%; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+  .video_width
+  {
+    width: 650px;
+    height: 650px;
+  
+  }
+
+
+
+  /* mobile */
+
+
+
+    .image__mobile_container {
+      width: 100%; 
+      display:flex;
+      align-items: center;
+    }
+
+    .image__mobile_container img {
+      object-fit: cover;
+      width: 100%;
+      height: 320px;
+
+    }
+
+
+    .video_mobile {
+      width: 450px;
+      height: 320px;
+    }
+    
+    .video_desktop {
+      width: 650px;
+      height: 450px;
+    }
+    
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .video_container iframe {
+        width: 450px;
+        height: 320px;
+      }
+    }
+    
+    /* Default for larger screens */
+    @media (min-width: 769px) {
+      .video_container iframe {
+        width: 650px;
+        height: 450px;
+      }
+    }
+
+
