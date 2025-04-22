@@ -6,20 +6,29 @@ import Title from '../../components/Title/Title'
 const Contact = () => {
   const [data, setData] = useState([]); 
 
-  // useEffect(() => {
-  //   const apiUrl = process.env.REACT_APP_API_URL; 
-  //   console.log("API URL:", apiUrl);
-  //   fetch(`${apiUrl}/User`)
-  //     .then((res) => res.json())
-  //     .then((res) => setData(res))
-  //     .catch((error) => console.error("Error fetching data:", error)); 
-  // }, []);
+  useEffect(() => {
+    const apiUrl = import.meta.env.VITE_API_URL;
+
+    console.log("API URL:", apiUrl);
+    fetch(`${apiUrl}/User`, { 
+      method: 'GET',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      credentials: 'include'  // Include credentials if needed (cookies, etc.)
+  })
+      .then((res) => res.json())
+      .then((res) => setData(res))
+      .catch((error) => console.error("Error fetching data:", error)); 
+  }, []);
+
+  console.log("Adata", data);
 
   return (
     <div className={styles.contact_container}>
-      {data ? data.map((item) => (
-        <div key={item.userId}>{item.userName}</div>
-      )) : "no data"}
+ {/*      {data.length > 0  ? data.map((item) => (
+        <div className='text-white' key={item.userId}>{item.userName}</div>
+      )) : "no data"} */}
       <div style={{ width: '100%', height: 'full', backgroundColor: 'slategray' }}>
         <Banner image="/assets/images/istockphoto-1141191007-612x612.jpg"/>
       </div>

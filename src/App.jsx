@@ -8,7 +8,8 @@ import News from './pages/News/News';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Group from './pages/Group/Group';
-import GroupDetails from './components/GroupDetails/GroupDetails';
+import GroupDetails from './components/Groupdetails/GroupDetails';
+
 
 
 
@@ -26,7 +27,7 @@ function App() {
 
    <Layout>
    <Routes>
-   <Route path="/login" element={<Login/>} />
+   {/* <Route path="/login" element={<Login/>} /> */}
 
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
