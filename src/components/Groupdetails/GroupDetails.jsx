@@ -36,7 +36,7 @@ const GroupDetails = () => {
         {group.gallery && (
           <div className={styles.group_gallery}>
             {group.gallery.map((item) => (
-              <img key={item.id} src={item.img} alt={`Gallery item ${item.id}`} />
+              <img key={item.id} src={item.img} alt={`Gallery item ${item.id}`}  style={{ objectFit: 'cover',margin:'5px',borderRadius:"7px" }} />
             ))}
           </div>
         )}

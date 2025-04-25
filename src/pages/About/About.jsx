@@ -16,14 +16,14 @@ const About = () => {
     <div className={styles.aboute_container}>
 
 
-      <div className={styles.banner} style={{ width: '100%', height: 'full', backgroundColor: 'slategray' }}>
+      <div className={styles.banner}>
       <Banner image="/assets/images/istockphoto-1141191007-612x612.jpg"/>
 
       </div>
 
 
 
-    <div className="w-full h-auto flex flex-col justify-around  text-white ">
+    <div>
 
    <Title title="About PulseArt"/>
 

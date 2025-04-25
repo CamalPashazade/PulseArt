@@ -4,20 +4,20 @@
 
 .news_container{
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     color: white;
-    margin: 10px 20px;
-    padding: 10px 20px;
 
-
-    
-  
 }
+
+.banner {
+    width: 99%;
+
+}
+
 
 .gallery
 {
@@ -28,5 +28,36 @@ flex-wrap: wrap;
 align-items: start;
 justify-content: center;
 /* background-color: aqua; */
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    .banner {
+        display: none;
+    }
+
+
+    .news_container {
+
+        text-align: center;
+
+    }
+
+    .text {
+
+        padding: 0px 5px;
+    }
+
+
+    .gallery {
+
+        align-items: center;
+
+
+    }
+
 
 }

@@ -6,14 +6,14 @@ const Gallery = ({item}) => {
   return (
    
 
-    <div  className='w-[294px] h-[294px]'>
+    <div >
               
     <img
     src={item.img}
-    width={289}
+    width={350}
     height={300}
      alt={item.id.toString()}
-     style={{ objectFit: 'cover',margin:'5px' }}
+     style={{ objectFit: 'cover',margin:'5px',borderRadius:"7px" }}
      
      
 

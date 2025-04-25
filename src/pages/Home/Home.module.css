@@ -56,7 +56,7 @@
   .image_container img,
   .image__mobile_container img {
     width: 100%;
-    height: 320px;
+    height: 400px;
   }
 
   .video_container iframe,
@@ -65,4 +65,16 @@
     width: 450px;
     height: 320px;
   }
+}
+
+
+
+@media (max-width: 576px) {
+
+
+  .home_container {
+
+  width: 100%;
+  height: auto;
+}
 }
