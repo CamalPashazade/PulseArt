@@ -2,9 +2,9 @@
 
 import React from 'react'
 import styles from './footer.module.css';
-import { SlSocialFacebook } from "react-icons/sl";
+import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { AiOutlineYoutube } from "react-icons/ai";
+import { FaYoutube } from "react-icons/fa";
 
 import useIsMobile from '../Ismobile/isMobile';
 import { Link } from 'react-router-dom';
@@ -27,14 +27,19 @@ const Footer = () => {
 
 <div className={styles.social_media}>
 
-  <Link to={'/'}><SlSocialFacebook size={25}/></Link>
+  <Link to={'/'}>
+  <FaFacebookF className={`${styles.link} ${styles.link_facebook}`} />
+  </Link>
+  
 
   <Link to="https://www.instagram.com/etudbaku/?hl=en" target="_blank" rel="noopener noreferrer">
-  <FaInstagram size={25} />
+  <FaInstagram className={`${styles.link} ${styles.link_instagram}`} />
 </Link>
 
 
-  <Link href={'/'}><AiOutlineYoutube size={25}  /></Link>
+  <Link href={'/'}>
+  <FaYoutube className={`${styles.link} ${styles.link_youtube}`} />
+  </Link>
 
 </div>
 

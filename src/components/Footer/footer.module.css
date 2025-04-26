@@ -39,6 +39,46 @@
 
 }
 
+.link
+{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    color: black;
+    
+
+}
+
+
+#link
+{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    color: black; 
+}
+
+.link_facebook:hover
+{
+color:#4267B2;
+transform: translateY(-5px);
+transition: 0.3s;
+}
+
+.link_instagram:hover
+{
+color:#E1306C;;
+transform: translateY(-5px);
+transition: 0.3s;
+}
+
+.link_youtube:hover
+{
+color:#FF0000;
+transform: translateY(-5px);
+transition: 0.3s;
+}
+
 .copyright
 {
     font-size: 16px;
