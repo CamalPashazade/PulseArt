@@ -37,7 +37,7 @@ const Footer = () => {
 </Link>
 
 
-  <Link href={'/'}>
+  <Link to={'/'}>
   <FaYoutube className={`${styles.link} ${styles.link_youtube}`} />
   </Link>
 

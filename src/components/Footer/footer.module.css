@@ -50,12 +50,13 @@
 }
 
 
-#link
+.link
 {
     cursor: pointer;
     font-size: 20px;
     transition: 0.3s;
-    color: black; 
+    /* color: black;  */
+      color: white; 
 }
 
 .link_facebook:hover
@@ -95,8 +96,8 @@ transition: 0.3s;
         width: 100vw;
        color: white;
         display: flex;
-        position: absolute;
-        bottom: -180px;
+        /* position: absolute; */
+        /* bottom: -180px; */
         justify-content: center;
         align-items: center;
         right: 0;
