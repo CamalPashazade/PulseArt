@@ -131,9 +131,21 @@
     flex-direction: column;
     text-align: center;
   }
+  .paragraph
+  {
+    width: 100%;
+      font-size: 20px;
+    line-height: 40px;
+    
+  }
 
+.image_container,
+.image__mobile_container {
+  width: 100%;
+ 
 
-
+  
+}
 
 .image_container img,
 .image__mobile_container img {
