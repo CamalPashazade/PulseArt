@@ -23,9 +23,9 @@ const About = () => {
 
 
 
-    <div>
+    <div className={styles.body}>
 
-   <Title title="About PulseArt"/>
+<Title title="About PulseArt" />
 
         <p className={styles.text}>
 
