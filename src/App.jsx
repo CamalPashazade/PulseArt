@@ -4,7 +4,6 @@ import Layout from './components/Layout/Layout'
 import Music from './pages/Music/Music';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import News from './pages/News/News';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Group from './pages/Group/Group';
@@ -33,13 +32,12 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/music" element={<Music/>} />
-          {/* <Route path="/news" element={<News />} /> */}
           <Route path="/contact" element={<Contact/>} />
           <Route path="/group" element={<Group/>} />
           <Route path="/group/:id" element={<GroupDetails/>} />
 
                  {/* 404 */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound/>} />
 
 
 
