@@ -8,9 +8,7 @@ import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Group from './pages/Group/Group';
 import GroupDetails from './components/Groupdetails/GroupDetails';
-import NotFound from './components/notFound/notFound';
-
-
+import NotFound from './components/notFound/NotFound';
 
 
 
