@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Group from './pages/Group/Group';
 import GroupDetails from './components/Groupdetails/GroupDetails';
+import NotFound from './components/notFound/notFound';
 
 
 
@@ -32,10 +33,13 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/music" element={<Music/>} />
-          <Route path="/news" element={<News />} />
+          {/* <Route path="/news" element={<News />} /> */}
           <Route path="/contact" element={<Contact/>} />
           <Route path="/group" element={<Group/>} />
           <Route path="/group/:id" element={<GroupDetails/>} />
+
+                 {/* 404 */}
+        <Route path="*" element={<NotFound />} />
 
 
 

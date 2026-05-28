@@ -17,14 +17,33 @@ export default function Home() {
           className={styles.Sizes}
           style={{ backgroundColor: item.backcolor }}
         >
-          <div className={styles.image_container}>
-            <img
-              src={item.img}
-              alt="Pulseart_logo"
-            />
-          </div>
 
-          <div className={styles.video_container}>
+          <section className={styles.section}>
+            <div className={styles.image_container}>
+              <img
+                src={item.img}
+                alt="Pulseart_logo"
+              />
+            </div>
+
+            <div className={styles.paragraph}>
+
+              <span>{item.name}</span>
+              <p >
+                {item.paragraph}
+              </p>
+            </div>
+
+
+
+
+          </section>
+
+
+
+
+
+          {/*       <div className={styles.video_container}>
             <iframe
               className={styles.video_desktop} 
               src={`https://www.youtube.com/embed/${extractYouTubeId(item.videoThumbnail)}`}
@@ -33,7 +52,7 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

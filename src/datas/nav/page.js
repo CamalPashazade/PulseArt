@@ -14,11 +14,11 @@ export const navigation = [
     title: "Music",
     href: "/music",
   },
-  {
-    id: 4,
-    title: "News",
-    href: "/news",
-  },
+  // {
+  //   id: 4,
+  //   title: "News",
+  //   href: "/news",
+  // },
   {
     id: 5,
     title: "Contact",
